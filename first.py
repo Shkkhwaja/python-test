@@ -61,7 +61,7 @@
 
 
 
-num = input("Enter number : ")
+# num = input("Enter number : ")
 
 # n = 0
 
@@ -81,23 +81,39 @@ num = input("Enter number : ")
 #     i += 1
     
 
-count= 0
+# count= 0
 
-for i in num:
-    count = count + 1
+# for i in num:
+#     count = count + 1
 
-print(count)
-
-
+# print(count)
 
 
+# type conversion
+
+# n = 10
+# print(type(n))
+
+# f = float(n)
+# print(type(f))
 
 
+# s = "123"
+# d= int(s)
+
+# print(type(d))
 
 
+# g=34.5
+
+# j=int(g)
+# print(type(j))
 
 
-
+# a=10
+# b=12.5
+# c=a+b
+# print(type(c))
 
 
 
