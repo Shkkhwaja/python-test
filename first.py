@@ -61,7 +61,7 @@
 
 
 
-num = int(input("Enter number : "))
+num = input("Enter number : ")
 
 # n = 0
 
