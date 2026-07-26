@@ -176,16 +176,103 @@
 # print(l)
 
 
-n=(1,2,3,4,5,6,7,8,9,10)
+# n=(1,2,3,4,5,6,7,8,9,10)
 
-for i in range(len(n)):
-    if n[i] % 2 ==0:
-        print(n[i])
-
-
+# for i in range(len(n)):
+#     if n[i] % 2 ==0:
+#         print(n[i])
 
 
 
+# SET
+
+
+# l=[1,2,3,3,3,3,4,5,6,7,7,7,7]
+
+# s= set(l)
+# print(s)
+
+# s1={2,3,4,5,6,7}
+# s2={2,3,4,5,8,9}
+
+# print(s1 | s2)
+
+
+
+# distionaries
+# vanilla python
+# d = {10:100,20:200,30:300}
+
+
+# d[40] =400 #create
+# d[10] = 10  #update
+
+# print(d.get(20))
+# print(d.items())
+# print(d.keys())
+# # print(d.pop(30))
+
+
+# # d.popitem()
+
+# d.setdefault(70,2000)
+
+# d.update({80:80000})
+
+# print(d)
+# print(d.values())
+
+
+# traversing (loops)
+
+# question 1
+
+
+# d= {10:100,20:200,30:300,40:400}
+# c = {50:500,60:600}
+
+# d.update(c)
+
+# for i in c:
+#     d[i] = c[i]
+
+# sum=0
+
+# for i in c:
+#     sum += c[i]
+
+# print(sum)
+
+
+# frequency counting
+
+# a= ["a","b","a","c","b","a","c","a","b"]
+
+# d={}
+
+# for i in a:
+#     if i in d.keys():
+#         d[i] = d[i] + 1
+#     else:
+#         d[i] = 1
+
+# print(d)
+
+
+
+# d1= {10:100,20:200,30:300,40:400}
+# d2 = {40:500,60:600}
+
+
+# for i in d2:
+#     if i in d1:
+#         d1[i] = d1[i] + d2[i]
+#     else:
+#         d1[i] = d2[i]
+
+
+
+# print(d1)
 
 
 
