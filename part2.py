@@ -278,7 +278,14 @@
 
 
 
+n1=int("hello")
 
+try:
+    print(n1)
+except Exception as err:
+    print("Error ",err)
+
+    
 
 
 

@@ -1,0 +1,2 @@
+python is a programming language.
+I like python because python is easy to learn.
