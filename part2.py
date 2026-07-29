@@ -280,6 +280,71 @@
 
 
 
+# d1 ={10:100,20:200,30:300}
+# d2 = {30:50,40:400,50:500}
+
+# for i in d2:
+#     if i in d1:
+#         d1[i] += d2[i]
+#     else:
+#         d1[i] = d2[i]
+
+# print(d1)
+
+
+
+
+
+
+# exceptions errors
+
+# a=2
+# b=0
+# print(a/b)   #ZeroDivisionError
+
+# a =10
+# b="4"
+
+# print(a+b)   #TypeError
+
+# a = int("hello")
+# print(a)  #ValueError
+
+
+# a = int(input("Enter your first number : "))
+# b = int(input("Enter your second number : "))
+
+# try:
+#     print(a/b)
+# except Exception as err:
+#     print(f"sorry an error occurs {err}")
+# else:
+#     print("this is else")
+# finally:
+#     print("I will run always")
+
+# name= input("Enter your name : ")
+
+# print(name)
+
+
+
+
+age = int(input("Tell your age :- "))
+
+if age < 18:
+    raise ValueError("No age matches your input")
+print(age)
+
+
+
+
+
+
+
+
+
+
 
 
 
