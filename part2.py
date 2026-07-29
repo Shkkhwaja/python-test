@@ -278,7 +278,14 @@
 
 
 
+n1=int("hello")
 
+try:
+    print(n1)
+except Exception as err:
+    print("Error ",err)
+
+    
 
 # d1 ={10:100,20:200,30:300}
 # d2 = {30:50,40:400,50:500}
