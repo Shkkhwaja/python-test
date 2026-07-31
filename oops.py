@@ -84,35 +84,82 @@
 
 #A inheritance means the child class has all the power of parent class measn it has access for attribute, methods and initiate.
 
-class BagFactory:
-    def __init__(self,material,zip,pockets):
-        self.material = material
-        self.zip = zip
-        self.pockets = pockets
+
+#multilevel inheritance
+
+# class BagFactory:
+#     def __init__(self,material,zip,pockets):
+#         self.material = material
+#         self.zip = zip
+#         self.pockets = pockets
         
 
-    def details(self):
-        print(f"the bag material is : {self.material}")
-        print(f"the bag ZIP is : {self.zip}")
-        print(f"the bag pockets is : {self.pockets}")
+#     def details(self):
+#         print(f"the bag material is : {self.material}")
+#         print(f"the bag ZIP is : {self.zip}")
+#         print(f"the bag pockets is : {self.pockets}")
 
 
 
-bag1 = BagFactory("cotton",3,5)
-bag1.details()
+# bag1 = BagFactory("cotton",3,5)
+# bag1.details()
 
 
-class Reebok(BagFactory):
-    def __init__(self, material, zip, pockets,colour):
-        super().__init__(material, zip, pockets)
-        self.colour = colour
+# class Reebok(BagFactory):
+#     def __init__(self, material, zip, pockets,colour):
+#         super().__init__(material, zip, pockets)
+#         self.colour = colour
         
-    def col(self):
-        print(f"this is the colour {self.colour}")
+#     def col(self):
+#         print(f"this is the colour {self.colour}")
 
-bag2 = Reebok("Polister",2,4,"gray")
-bag2.details()
-bag2.col()
+# bag2 = Reebok("Polister",2,4,"gray")
+# bag2.details()
+# bag2.col()
+
+# class Campus(Reebok):
+#     def __init__(self, material, zip, pockets, colour):
+#         super().__init__(material, zip, pockets, colour)
+
+#     def data(self):
+#         print(f"campus {self.colour}")
+
+# cam = Campus("new cotton",5,5,"green")
+
+# cam.data()
+
+
+
+#multiple inheritance
+
+class Animal:
+    def __init__(self,name):
+        self.name=name
+
+class Human:
+    def __init__(self,id):
+        self.id = id
+
+class Robot(Animal,Human):
+    def __init__(self, name,id):
+        Animal.__init__(self,name)
+        Human.__init__(self,id)
+
+rob = Robot("new hus",122)
+
+print(rob.id)
+print(rob.name)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
