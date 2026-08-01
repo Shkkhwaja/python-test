@@ -84,51 +84,80 @@
 
 #A inheritance means the child class has all the power of parent class measn it has access for attribute, methods and initiate.
 
-class BagFactory:
-    def __init__(self,material,zip,pockets):
-        self.material = material
-        self.zip = zip
-        self.pockets = pockets
+# class BagFactory:
+#     def __init__(self,material,zip,pockets):
+#         self.material = material
+#         self.zip = zip
+#         self.pockets = pockets
+        
 
-    def details(self):
-        print(f"the bag material is : {self.material}")
-        print(f"the bag ZIP is : {self.zip}")
-        print(f"the bag pockets is : {self.pockets}")
-
-
-bag1 = BagFactory("cotton",3,5)
-bag1.details()
+#     def details(self):
+#         print(f"the bag material is : {self.material}")
+#         print(f"the bag ZIP is : {self.zip}")
+#         print(f"the bag pockets is : {self.pockets}")
 
 
-class Reebok(BagFactory):
-    def __init__(self, material, zip, pockets,colour):
-        super().__init__(material, zip, pockets)
-        self.colour = colour
 
-    def details(self):      #method overriding
-        super().details()
-        print(f"the bag colour is : {self.colour}")
+# bag1 = BagFactory("cotton",3,5)
+# bag1.details()
 
-    def col(self):
-        print(f"this is the colour {self.colour}")
 
-bag2 = Reebok("Polister",2,4,"gray")
-bag2.details()
-bag2.col()
+# class Reebok(BagFactory):
+#     def __init__(self, material, zip, pockets,colour):
+#         super().__init__(material, zip, pockets)
+#         self.colour = colour
+        
+#     def col(self):
+#         print(f"this is the colour {self.colour}")
+
+# bag2 = Reebok("Polister",2,4,"gray")
+# bag2.details()
+# bag2.col()
 
 
 
 
+#polymorphism
+
+# class Animal:
+#     def speak():
+#         print("Animals can't speak")
+
+# class Human:
+#     def speak():
+#         print("Human can speak")
+
+# obj = Animal
+# obj2 = Human
+
+# obj.speak()
+# obj2.speak()
 
 
+#method overriding (we need inheritance)
+
+class Animal:
+    a=12
+    def __init__(self,name) -> None:
+        self.name = name
+
+    def info(self):
+        print(f"this is the animal class my name is {self.name}")
 
 
+class Human(Animal):
+    b=12
+    
+    def info(self):
+        super().info()
+        print(f"This is the human class my name is {self.name}")
+
+obj = Human("afroz")
+
+obj.info()
 
 
-
-
-
-
-
+# when we are doing inheritance and parent and child class have same name
+# method name so the child class method will override your parent class method
 
 
