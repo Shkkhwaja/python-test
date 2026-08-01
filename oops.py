@@ -89,26 +89,28 @@ class BagFactory:
         self.material = material
         self.zip = zip
         self.pockets = pockets
-        
 
-#     def details(self):
-#         print(f"the bag material is : {self.material}")
-#         print(f"the bag ZIP is : {self.zip}")
-#         print(f"the bag pockets is : {self.pockets}")
-
+    def details(self):
+        print(f"the bag material is : {self.material}")
+        print(f"the bag ZIP is : {self.zip}")
+        print(f"the bag pockets is : {self.pockets}")
 
 
-# bag1 = BagFactory("cotton",3,5)
-# bag1.details()
+bag1 = BagFactory("cotton",3,5)
+bag1.details()
 
 
-# class Reebok(BagFactory):
-#     def __init__(self, material, zip, pockets,colour):
-#         super().__init__(material, zip, pockets)
-#         self.colour = colour
-        
-#     def col(self):
-#         print(f"this is the colour {self.colour}")
+class Reebok(BagFactory):
+    def __init__(self, material, zip, pockets,colour):
+        super().__init__(material, zip, pockets)
+        self.colour = colour
+
+    def details(self):      #method overriding
+        super().details()
+        print(f"the bag colour is : {self.colour}")
+
+    def col(self):
+        print(f"this is the colour {self.colour}")
 
 bag2 = Reebok("Polister",2,4,"gray")
 bag2.details()
