@@ -136,28 +136,70 @@
 
 #method overriding (we need inheritance)
 
-class Animal:
-    a=12
-    def __init__(self,name) -> None:
-        self.name = name
+# class Animal:
+#     a=12
+#     def __init__(self,name) -> None:
+#         self.name = name
 
-    def info(self):
-        print(f"this is the animal class my name is {self.name}")
+#     def info(self):
+#         print(f"this is the animal class my name is {self.name}")
 
 
-class Human(Animal):
-    b=12
+# class Human(Animal):
+#     b=12
     
-    def info(self):
-        super().info()
-        print(f"This is the human class my name is {self.name}")
+#     def info(self):
+#         super().info()
+#         print(f"This is the human class my name is {self.name}")
 
-obj = Human("afroz")
+# obj = Human("afroz")
 
-obj.info()
+# obj.info()
 
 
 # when we are doing inheritance and parent and child class have same name
 # method name so the child class method will override your parent class method
 
 
+#practical on inheritance
+
+# class Vehical:
+
+#     def __init__(self,brand):
+#         self.brand = brand
+
+#     def start(self):
+#         print("Vehical started")
+
+
+# class Car(Vehical):
+#     def __init__(self, brand,model):
+#         super().__init__(brand)
+#         self.model = model
+
+#     def details(self):
+#         print(f"The brand is {self.brand} and the model is {self.model}")
+
+
+# car = Car("Honda","2025")
+
+# car.start()
+# car.details()
+
+
+
+# class Person:
+#     def __init__(self):
+#         pass
+
+#     def introduce(self):
+#         print("I am a person.")
+
+# class Student(Person):
+#     def introduce(self):
+#         # super().introduce()
+#         print("I am a student.")
+
+# ne = Student()
+
+# ne.introduce()
