@@ -205,7 +205,6 @@
 # ne.introduce()
 
 
-<<<<<<< HEAD
 # class hello:
 #     __a = 25
 
@@ -252,7 +251,8 @@ class ATM:
 
 obj = ATM()
 obj.login(2244)
-=======
+
+
 #abstract class
 
 # from abc import ABC, abstractmethod
@@ -304,4 +304,3 @@ obj.login(2244)
 
 # c = Card()
 # c.pay(1000)
->>>>>>> bb6d0c5c271cab0fd53f907caa821a25867ce1b9
