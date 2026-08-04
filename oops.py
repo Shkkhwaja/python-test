@@ -203,3 +203,51 @@
 # ne = Student()
 
 # ne.introduce()
+
+
+# class hello:
+#     __a = 25
+
+#     def info(cls):
+#         print(cls.__a)
+
+
+# hello().__a = 33
+
+
+# private
+
+# class BankAccount:
+#     __balance = 100000
+
+#     def __show_balance(cls):
+#         print(f"balance is {cls.__balance}")
+
+
+# bk = BankAccount()
+# print(bk.__balance)
+# bk.__show_balance()
+
+# private attribute and methods with logic
+
+
+class ATM:
+    __pin = 2234
+
+    def __init__(self):
+        pass
+
+    def __verify_pin(self,pin):
+        if self.__pin == pin:
+            return True
+        else:
+            return False
+
+    def login(self,pin):
+        if self.__verify_pin(pin) == True:
+            print("Login Successful")
+        else:
+            print("Incorrect PIN")
+
+obj = ATM()
+obj.login(2244)
