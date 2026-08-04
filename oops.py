@@ -205,6 +205,7 @@
 # ne.introduce()
 
 
+<<<<<<< HEAD
 # class hello:
 #     __a = 25
 
@@ -251,3 +252,56 @@ class ATM:
 
 obj = ATM()
 obj.login(2244)
+=======
+#abstract class
+
+# from abc import ABC, abstractmethod
+
+# class Animal(ABC):
+
+#     @abstractmethod
+#     def sound(self):
+#         pass
+
+# class Dog(Animal):
+#     def sound(self):
+#         print("This is a dog")
+
+# class Cat(Animal):
+#     def sound(self):
+#         print("this is a cat")
+
+# dog = Dog()
+# dog.sound()
+
+# cat = Cat()
+# cat.sound()
+
+
+# from abc import ABC, abstractmethod
+
+# class Payment(ABC):
+
+#     @abstractmethod
+#     def pay(self, amount):
+#         pass
+
+
+# class UPI(Payment):
+
+#     def pay(self, amount):
+#         print(f"Paid ₹{amount} using UPI")
+
+
+# class Card(Payment):
+
+#     def pay(self, amount):
+#         print(f"Paid ₹{amount} using Card")
+
+
+# u = UPI()
+# u.pay(500)
+
+# c = Card()
+# c.pay(1000)
+>>>>>>> bb6d0c5c271cab0fd53f907caa821a25867ce1b9
