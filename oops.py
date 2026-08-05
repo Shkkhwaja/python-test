@@ -231,26 +231,26 @@
 # private attribute and methods with logic
 
 
-class ATM:
-    __pin = 2234
+# class ATM:
+#     __pin = 2234
 
-    def __init__(self):
-        pass
+#     def __init__(self):
+#         pass
 
-    def __verify_pin(self,pin):
-        if self.__pin == pin:
-            return True
-        else:
-            return False
+#     def __verify_pin(self,pin):
+#         if self.__pin == pin:
+#             return True
+#         else:
+#             return False
 
-    def login(self,pin):
-        if self.__verify_pin(pin) == True:
-            print("Login Successful")
-        else:
-            print("Incorrect PIN")
+#     def login(self,pin):
+#         if self.__verify_pin(pin) == True:
+#             print("Login Successful")
+#         else:
+#             print("Incorrect PIN")
 
-obj = ATM()
-obj.login(2244)
+# obj = ATM()
+# obj.login(2244)
 
 
 #abstract class
@@ -304,3 +304,89 @@ obj.login(2244)
 
 # c = Card()
 # c.pay(1000)
+
+
+
+#dunder methods
+
+# class Animal():
+#     def __init__(self,name):
+#         self.name=name
+    
+#     def __str__(self):
+#         return f"The animal name is {self.name}"
+
+# obj = Animal("Lion")
+# obj2 = Animal("tiger")
+
+# print(obj)
+# print(obj2)
+
+# print(dir(int))
+
+# class Num:
+#     def __init__(self,number):
+#         self.number = number
+
+#     def __add__(self,other):
+#         return self.number + other.number
+
+# num1 = Num(20)
+# num2 = Num(30)
+
+# print(num1 + num2)
+
+
+#decorator
+
+
+# def extragreeting(fun):
+#     print("Welcome to inka")
+#     fun
+#     def wrapper():
+#         print("Thankyou visit again !!")
+
+#     return wrapper()
+
+
+
+# @extragreeting()
+# def greeting():
+#     print("Good morning")
+
+
+
+#*agrs taks multiple argument with same data type
+
+# def addi(*ar):
+#     sum=0
+#     for i in ar:
+#         sum = sum + i
+
+#     return sum
+
+# print(addi(10,20,30))
+
+
+#**kwargs takes multiple argument with multiple data types
+
+# def ar(**kwargs):
+#     return kwargs
+
+# print(ar(name="rajesh",age=22,profession="developer"))
+
+
+# ternary operation
+
+# a=9
+
+# print("Even number ") if a % 2 == 0 else print("Odd number")
+
+# list compriention
+
+a = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+ 
+b=[i for i in a if i % 2 == 0]
+
+print(b)
+
