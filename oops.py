@@ -384,9 +384,57 @@
 
 # list compriention
 
-a = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+# a = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
  
-b=[i for i in a if i % 2 == 0]
+# b=[i for i in a if i % 2 == 0]
 
-print(b)
+# print(b)
+
+#lambda funciton
+
+# check = lambda c: "even number" if c % 2 == 0 else "odd number"
+
+# print(check(6))
+
+
+# map, filter, zip
+
+# name = ["faiz","akifa","sunio","nobita"]
+
+# fin = list(map(len,name))
+
+# print(fin)
+
+#temperature formula
+# temp = [0,32,55,66,87]
+
+# def converter(a):
+#     far = (a* 9/5) +32
+#     return far
+
+# temp_con = list(map(converter,temp))
+
+#using lambda function
+# temp_con = list(map(lambda x: (x * 9/5) + 35,temp))
+
+# print(temp_con)
+
+
+#filter
+
+# mar = [40,33,70,77,47,35,20]
+
+# passed = list(filter(lambda x: x >= 40,mar))
+# print(passed)
+
+
+# zip
+
+# name=["hussin","faizan","parth"]
+
+# marks=[35,45,99]
+
+# comb = list(zip(name,marks))
+
+# print(comb)
 
